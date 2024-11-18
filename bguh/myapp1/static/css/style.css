@@ -1,0 +1,1185 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #051A69;
+    color: white;
+}
+
+.backgr{
+    background-image: url('/static/img/snowpark-skis-headerbg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+.course_course_details_container,.course_course_details_container a{
+    color: #071546;
+}
+
+a:link{
+    text-decoration-line: none;
+}
+   
+/* div{
+    border: 2px solid rgb(255, 255, 255);
+}   */
+
+.nav1{
+    text-align: center;
+}
+
+.nav1l{
+    width: 40%;
+    display: inline-block;
+}
+
+.main_logo{
+    width: 5%;
+    display: inline-block;
+    height: auto;
+}
+
+img{
+    width:50% ;
+    height: auto;   
+}
+
+.bx{
+    
+    background-image: linear-gradient(#f2b42d, #fd0300);
+    /* margin-top: -1%; */
+    width: 22%;
+    
+}
+/* .bx a{
+    padding-left: 3%;
+    padding-right: 3%;
+} */
+    
+
+.nav2{
+    display: none;
+}
+
+.nav3{
+    display: none;
+}
+
+.nav4{
+    display: none;
+}
+
+
+
+.nav_body{
+    background-color: #071e67;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+.menu,.close{
+    display: none;
+    text-align: end;
+    
+}
+.menu img,.close img{
+    width: 5%;
+}
+
+
+
+/* header2 */
+@media (max-width: 1010px) {
+    .nav1l {
+        display: none;
+    }
+    .nav2{
+        display: block;
+        text-align: center;
+    }  
+    .main_logo{
+        width: 8%;
+    }  
+}
+
+/* header3 */
+@media (max-width: 770px) {
+    .nav2 {
+        display: none;  
+    }
+    .nav3{
+        display: block;
+        text-align: center;
+    }
+    .main_logo{
+        width: 9%;
+    } 
+}
+
+/* header4 */
+@media (max-width: 500px) {
+    .nav3 {
+        display: none;
+        
+    }
+   
+    .nav4{
+        display: none;
+        text-align: center;
+    }
+    .menu{
+        display: block;
+       
+        
+}
+.main_logo{
+    width: 10%;
+}
+}
+
+
+
+@media (max-width: 1430px) {
+    .bx {
+        width: 25%;
+        padding: 0;
+        
+    }
+
+    
+ 
+
+}
+
+
+
+@media (max-width: 1240px) {
+    .bx {
+        width: 28%;
+    }
+
+}
+
+  
+
+@media (max-width: 1010px) {
+    .bx {
+        width: 15%;
+        padding: 0;
+        position: relative;
+        left: 9.2%;
+        
+    }
+
+
+}
+
+
+
+@media (max-width: 770px) {
+    .bx {
+        width: 20%;
+        padding: 0;
+        position: relative;
+        left: 15%;  
+    }
+
+
+           
+}
+
+
+@media (max-width: 550px) {
+    .bx {
+
+        width: 23%; 
+    }
+    
+
+}
+@media (max-width: 500px) {
+    .bx {
+        width: 40%; 
+         
+    }
+    .qa{
+       padding-left: 23%;
+          
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* style="background-image: url('{% static 'img/si-call-back-bg.jpg' %}');" */
+
+
+
+
+
+
+/* header starttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
+
+
+
+
+
+
+
+/* header enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+
+
+/* footer startttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+.footer_top_color_img{
+        background-image: url('/static/img/snowpark-home-footer-bg.png');
+        padding-top: 75px;
+    }
+
+.footer_scopetext_img{
+        background-image: url('/static/img/snowpark-footer-logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+    }
+    
+ .footer_certification_img{
+        background-image: url('/static/img/iso_iaflogo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-top: 45px;
+        margin-bottom: 10px;
+        
+    }
+
+    @media (max-width: 850px) {
+        .footer_contact div{
+            width: 100%;
+            margin-bottom: 7px;
+        }
+    }
+/* footer enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+ 
+/* register startttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+.register_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.register_form_bg_img{
+        width: 69%;
+        display: flex;
+        justify-content: center;
+    }
+
+.register_form_bg_img{
+    background-image: url('/static/img/si-call-back-bg.jpg');
+    }
+
+.register_form{
+        background-color: white;
+        color: black;
+        width:88%;
+        padding-bottom: 9.5%;
+        padding-top: 3%;
+        background-color: transparent;
+    }
+
+.register_form_col1{
+    position: relative;
+    right: 1%;
+    border: 1px solid grey;
+    }
+
+.register_form_col2{
+    position: relative;
+    left: 1%;
+    border: 1px solid grey;
+    }
+
+.register_loacationbx1,.register_loacationbx2,.register_loacationbx3,.register_loacationbx4,.register_loacationbx5{
+    border-radius: 4px;
+    }
+
+.register_location_contentbx li{
+    margin-bottom: 1.5%;
+    position: relative;
+    right: 5%;
+    }
+
+.register_location_contentbx span i{
+    position: relative;
+    top: 3px;
+    }
+
+.register_location_contentbx h3{
+    position: relative;
+    right: 2%;
+    }
+
+.register_location_addressicon:before {
+    content: '\e0c8'; 
+    font-family: 'Material Icons'; 
+    }
+
+.register_location_teleicon:before{
+    content: '\e325';
+    font-family: 'Material Icons';
+    }
+
+.register_location_mailicon:before{
+    content: '\e158'; 
+    font-family: 'Material Icons';
+    }
+
+.register_location_webicon:before{
+    content: '\e894'; 
+    font-family: 'Material Icons';
+    }
+
+.register_location_mapicon::before{
+    content: '\e52e'; 
+    font-family: 'Material Icons';
+    }
+
+.register_locationbx_end_img{
+    background-image: url('/static/img/snowpark-home-slide-decoration-bottomm.png'); 
+    }
+
+@media (max-width:1010px){
+    .register_form_bg_img{
+        width: 80%;
+    }
+    .register{
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 960px) {
+    .register_locationbx1,.register_locationbx2,.register_locationbx3,.register_locationbx4,.register_locationbx5{
+        width: 200%; 
+        position: relative;
+        right: 8%;
+    }
+}
+
+@media (max-width: 770px) {
+    .register_form_col1,.register_form_col2{
+        width: 100%;
+    }         
+    .register{
+        margin-top: 125px
+    }   
+}
+
+@media (max-width: 550px) {
+    .register_form_bg_img{
+        width: 90%;
+    }
+}
+@media (max-width: 1010px) {
+    .contact_form_bg_img{
+        width: 80%;
+    }
+    .contact{
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 960px) {
+    .contact_locationbx1,.contact_locationbx2,.contact_locationbx3,.contact_locationbx4,.contact_locationbx5{
+        width: 200%; 
+        position: relative;
+        right: 8%;
+    }
+}
+
+@media (max-width: 770px) {
+    .contact{
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 550px) {   
+    .contact_form_bg_img{
+        width: 90%;
+    } 
+    .contact{
+        margin-top: 250px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .register{
+        margin-top: 25px;
+    }
+}
+
+/* register endddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+/* contact startttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
+
+.contact_rating_img{
+    background-image: url('/static/img/5star.png');
+    width: 100%;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+.contact_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.contact_form_bg_img{
+    background-image: url('/static/img/si-call-back-bg.jpg');
+    }
+
+.contact_form_bg_img{
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    }
+
+.contact_form {
+    background-color: white;
+    color: black;
+    width:88%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    background-color: transparent;
+    }
+
+.contact_form_col1{
+    position: relative;
+    right: 1%;
+    border: 1px solid grey;
+    }
+
+.contact_form_col2{
+    position: relative;
+    left:1%;
+    border: 1px solid grey;
+    }
+
+.contact_locationbx1,.contact_locationbx2,.contact_locationbx3,.contact_locationbx4,.contact_locationbx5{
+    border-radius: 4px;
+    } 
+
+.contact_location_addressicon:before {
+    content: '\e0c8'; 
+    font-family: 'Material Icons'; 
+    }
+
+.contact_location_teleicon:before{
+    content: '\e325';
+    font-family: 'Material Icons';
+    }
+
+.contact_location_mailicon:before{
+    content: '\e158'; 
+    font-family: 'Material Icons';
+    }
+
+.contact_location_webicon:before{
+    content: '\e894'; 
+    font-family: 'Material Icons';
+    }
+
+.contact_location_mapicon::before{
+    content: '\e52e'; 
+    font-family: 'Material Icons';
+    }
+
+.contact_location_contentbx li{
+    margin-bottom: 1.5%;
+    position: relative;
+    right: 5%;
+    }
+
+.contact_location_contentbx span i{
+    position: relative;
+    top: 3px;
+    }
+
+.contact_location_contentbx h3{
+    position: relative;
+    right: 2%;
+    }
+
+.contact_locationbx_end_img{
+    background-image: url('/static/img/snowpark-home-slide-decoration-bottomm.png'); 
+    }   
+    
+@media (max-width: 1010px) {
+    .contact_form_bg_img{
+        width: 80%;
+    }
+    .contact{
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 960px) {
+    .contact_locationbx1,.contact_locationbx2,.contact_locationbx3,.contact_locationbx4,.contact_locationbx5{
+        width: 200%; 
+        position: relative;
+        right: 8%;
+    }
+    .contact_form_col1,.contact_form_col2{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 770px) {
+    .contact{
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 550px) {   
+    .contact_form_bg_img{
+        width: 90%;
+    } 
+    
+}
+
+
+@media (max-width: 500px) {
+    .contact{
+        margin-top: 25px;
+    }
+}
+
+
+/* contact enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+/* know ussssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss  */
+
+
+
+
+    .knowcontainer{
+        width: 70%;
+        max-width: 1050px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+        
+        
+    }
+
+
+
+    .know_rating_img{
+        background-image: url('/static/img/5star.png');
+        width: 100%;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+
+.know_img{
+    background-image: url('/static/img/snowpark-home-slider-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+    
+@media (max-width: 1010px) {
+    .know{
+       margin-top: 75px;
+    }
+}
+
+    @media (max-width:1100px){
+        .knowcontainer{
+
+        width: 85%;  
+        }
+    
+    }
+
+
+    @media (max-width:900px){
+        .knowcontainer{
+
+        width: 95%; 
+        }
+
+    
+        
+    }
+
+
+    @media (max-width: 770px) {
+        .know{
+            margin-top: 125px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .know{
+            margin-top: 25px;
+        }
+    }
+
+
+
+
+
+/* courseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+
+
+
+
+
+.course_rating_img{
+    background-image: url('/static/img/5star.png');
+    width: 100%;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+    
+    /* .course_course_details_container a{
+        color: blue;
+    } */
+
+
+
+    .course_course_details_container .row {
+        margin-bottom: 0px;
+    }
+
+    .course_course_details_container div{
+    margin-bottom: 24px;
+    }
+
+    .course_course_details_container div div{
+        background-color: white;
+        /* color: blue; */
+        font-size: 20px;
+        padding:  8px 0px;
+        padding-left: 3px;
+        
+
+    }
+
+    .course_course_details_container div div h3{
+        color: white;
+        margin-bottom: -10px;
+        margin-top: 0;
+    }
+    
+    
+
+    @media (max-width: 1010px) {
+        .course_course_details_container .row{
+            position: relative;
+            left: 1.5rem;
+        }
+        
+        .course_course_details_container div{
+            width: 100%;
+        }
+}
+
+
+.contents{
+    width: 70%;
+}
+
+
+
+
+.newbatch{
+    width: 65%
+}
+
+@media (max-width: 860px) {
+
+    .newbatch {
+        width: 100%;
+ 
+    }
+    
+    
+}
+
+@media (max-width:580px){
+    .contents{
+        width: 90%;
+    }
+}
+
+@media (max-width:450px){
+    .contents{
+        width: 100%;
+    }
+}
+
+
+.course_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.course_form_bg_img{
+    background-image: url('/static/img/si-call-back-bg.jpg');
+    }
+
+.course_form_bg_img{
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    }
+
+.course_form {
+    background-color: white;
+    color: black;
+    width:88%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    background-color: transparent;
+    }
+
+.course_form_col1{
+    position: relative;
+    right: 1%;
+    border: 1px solid grey;
+    }
+
+.conurse_form_col2{
+    position: relative;
+    left:1%;
+    border: 1px solid grey;
+    }
+
+
+
+    .course_end_img{
+        background-image: url('/static/img/snowpark-home-slide-decoration-bottomm.png'); 
+        }   
+
+
+
+    
+@media (max-width: 1010px) {
+    .course_form_bg_img{
+        width: 80%;
+    }
+    .course{
+        margin-top: 75px;
+    }
+}
+
+@media (max-width: 960px) {
+    
+    .course_form_col1,.course_form_col2{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .course_form{
+        padding-top: 1%;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 1%;
+     }
+
+
+}
+
+@media (max-width: 770px) {
+    .course{
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 550px) {   
+    .course_form_bg_img{
+        width: 90%;
+    } 
+    
+}
+
+
+@media (max-width: 500px) {
+    .course{
+        margin-top: 25px;
+    }
+}
+
+
+
+
+    
+
+
+
+/* course enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+
+
+
+
+
+
+
+
+
+    /* utfyytgygyy8hy8hy8h */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+    .home_background{
+        background-image: url('/static/img/slider_bg.jpg');
+        background-size: cover;
+        width: 100%;
+        height: calc(100vh + 150px);
+
+    }
+
+    .home_scopelogo{
+        background-image: url('/static/img/scope-india-logo-home-page.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .home_scroll{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+
+    .home_scroll img{
+        scroll-snap-align: center;
+        margin-right: 25px;
+        width: 60vw;
+        height: auto;   
+
+    }
+   
+
+    .home_scroll img:hover{
+        scale: 1.02;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.index_form_bg_img{
+    background-image: url('/static/img/si-call-back-bg.jpg');
+    }
+
+.index_form_bg_img{
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    }
+
+.index_form {
+    background-color: white;
+    color: black;
+    width:88%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    background-color: transparent;
+    }
+
+.index_form_col1{
+    position: relative;
+    right: 1%;
+    border: 1px solid grey;
+    }
+
+.index_form_col2{
+    position: relative;
+    left:1%;
+    border: 1px solid grey;
+    }
+
+
+    .index_rating_img{
+        background-image: url('/static/img/5star.png');
+        width: 100%;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+
+
+
+
+    
+@media (max-width: 1010px) {
+    .index_form_bg_img{
+        width: 80%;
+    }
+    .home_background{
+        margin-top: 75px;
+    }
+
+
+
+}
+
+@media (max-width: 960px) {
+    
+    .index_form_col1,.index_form_col2{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .index_form{
+        padding-top: 1%;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 1%;
+     }
+
+
+}
+
+@media (max-width: 770px) {
+    .index{
+        margin-top: 125px;
+    }
+}
+
+@media (max-width: 550px) {   
+    .index_form_bg_img{
+        width: 90%;
+    } 
+    
+}
+
+
+@media (max-width: 500px) {
+    .home_background{
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+
+
+.wwww:hover{
+    
+    transform: translateY(-5px);
+    transition: 5ms;
+    
+}
+
+
+
+
+
+
+
+
+    @media (max-width: 770px) {
+        .home_det{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    /* home enddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+
+
+
+
+ 
+
+
+
+
+
+/* loginnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
+
+.logintext h2{
+    padding-top: 200px;
+}
+
+
+
+.login_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+.login_form_bg_img{
+    background-image: url('/static/img/si-call-back-bg.jpg');
+    }
+
+.login_form_bg_img{
+    width: 69%;
+    display: flex;
+    justify-content: center;
+
+    width: 25%;margin-bottom: 150px;border-radius: 15px;padding-bottom: 0px;
+    }
+
+.login_form {
+    background-color: white;
+    color: black;
+    width:88%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    background-color: transparent;
+    }
+
+.login_form input::placeholder{
+    font-size: small;
+}
+
+
+@media(max-width:1210px){
+.login_form_bg_img{
+    width: 35%;
+}
+        }
+
+@media(max-width:1110px){
+    .login_form_bg_img{
+        width: 40%;
+}
+}
+
+
+    @media(max-width:1010px){
+        .login_form_bg_img{
+            width: 42%;
+        }
+        
+.logintext h2{
+    padding-top: 240px;
+}
+
+}
+
+
+
+        @media(max-width:980px){
+            .login_form_bg_img{
+                width: 48%;
+            }
+            
+}
+
+
+@media(max-width:770px){
+    .login_form_bg_img{
+        width: 55%;
+    }
+    .logintext h2{
+        padding-top: 270px;
+    }
+}
+@media(max-width:650px){
+    .login_form_bg_img{
+        width: 62%;
+    }
+    
+}
+        
+@media(max-width:500px){
+.login_form_bg_img{
+    width: 82%;
+    }
+.logintext h2{
+    padding-top: 150px;
+    }
+}
+
+@media(max-width:400px){
+    .login_form_bg_img{
+        width: 87%;
+    }            
+}
+
+
+
+
+/* login endddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
+
+   
+    
+  
+
+.profilediv{
+    display: flex;
+}
+
+
+
+    
+    

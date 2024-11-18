@@ -1,0 +1,232 @@
+ {% extends "common.html" %}
+{% load static %}
+{% block content %}
+
+<div class="register" style="text-align: center;padding-top: 13%;"><h1>Registration</h1>
+  <h3 style="line-height: 200%;">It's just a matter of 800 days to an IT job!</h3>
+  <div ><h3 style="color: red;">If already registered <a style="border: 2px solid;background-color: rgb(2, 13, 23);color: white;" href="{% url 'login' %}">click here</a></h3></div>
+
+</div>
+
+
+<div class="mt-5 register_container ">
+  <div class="register_form_bg_img" >
+<div class="register_form ">
+    <form action="" method="post" enctype="multipart/form-data"> 
+        {% csrf_token %}
+        
+     <div class="row  ">
+       <div class="col-6 p-0 register_form_col1" >
+
+              <div class="row m-3 ">
+                <label for="firstname"id="ioi" class="mb-3">First Name</label><br>
+                <input type="text" class="firstname p-1" id="firstname" name="firstname">
+              </div>
+
+              <div class="row m-3">
+                <label for="lastname" class="mb-3">Last Name</label><br>
+                <input type="text" class="lastname p-1" id="lastname"name="lastname">
+              </div>
+
+
+              <div class="row m-3">
+                <label for="dob" class="mb-3">Date Of Birth</label><br>
+                <input type="date" class="dob p-1" id="dob" name="dob">
+             </div>
+
+              <div style="padding-bottom: 2.5%;" class="row m-3">
+                <label class="mb-3">Gender</label><br>
+                <label for="gender">
+                  <input type="radio" class="dob" id="gender" name="gender" value="male"> Male   </label>
+                  <label for="gender"><input type="radio" class="dob" id="gender" name="gender" value="female"> Female
+                </label>
+              </div>
+
+              <div class="row m-3">
+                <label for="email" class="mb-3">Email</label><br>
+                <input type="email" class="email p-1" id="email" name="email">
+                {% if messages %}
+    {% for message in messages %}
+        <div class="text-danger" class="sec">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+              </div>
+
+              <div class="row m-3">
+                <label for="phone" class="mb-3">Phone</label><br>
+                <input type="phone" class="phone p-1" id="phone" name="phone">
+            </div>
+
+
+
+        </div>
+        
+    
+            <div class="col-6 p-0 register_form_col2">
+
+               
+    
+    
+                <div class="row m-3">
+                    <label for="country" class="mb-3">Country</label><br>
+                    <select style="width: 50%;height: 34px;" name="country" id="country">
+                      <option value="">select a country</option>
+
+                      <option value="INDIA">India</option>
+                    <option value="CHINA">China</option>
+                  </select>
+                </div>
+        
+        
+                <div class="row m-3">
+                    <label for="state" class="mb-3">State</label><br>
+                    <select style="width: 50%;height: 34px;" name="state" id="state">
+                      <option value="">select a state</option>
+                    
+                  </select>
+                </div>
+    
+    
+                <div class="row m-3">
+                    <label for="city" class="mb-3">City</label><br>
+                    <select style="width: 50%;height: 34px;" name="city" id="city">
+                      <option value="">select a city</option>
+                  </select>
+                </div>
+    
+    
+                <div class="row m-3">
+                    <label for="" class="mb-3">Hobbies</label> <br>
+                    <div class="col-12">
+                      <input type="checkbox" class=" p-1" id="run" name="hobbies" value="run"> <label for="run">  run&nbsp;</label>
+                      <input type="checkbox" class=" p-1" id="fly" name="hobbies" value="fly"><label for="fly">fly&nbsp;</label>
+                      <input type="checkbox" class=" p-1" id="crawl" name="hobbies" value="crawl"><label for="crawl">crawl&nbsp;</label>
+                      <input type="checkbox" class=" p-1" id="jump" name="hobbies" value="jump"><label for="jump">jump&nbsp;</label>
+                    <br>
+                  </div>
+                </div>
+    
+                <div class="row m-3">
+                    <label for="" class="mb-1 mt-2">Avatar</label><br>
+                    <input type="file" class="avatar p-1 mb-3" id="avatar" name="avatar" required>
+                </div>
+
+                <div class="row m-3">
+                    <button style="height: 40px;background-color: rgb(7, 7, 57);color: white;">Register</button>              </div>
+                
+        </div>
+        
+    </div>  
+    
+    </form> 
+    </div>
+  </div>
+
+
+
+
+
+  </div>   
+  <div  style="background-color: #051a69;margin-top:-3%;margin-bottom: 40px;">
+  <div class="container mt-5" style="position: relative;left: 5.5%;width: 75%;" >
+    <h2 style="padding-bottom: 1%;padding-top: 2%;">Locations</h2>
+
+    <div class="row">
+      <div class="col-5 p-3 mb-4 pb-4 register_locationbx1" style="border: 1px solid white;">
+        <ul class="register_location_contentbx" type="none">
+          <li ><h3>Technopark TVM, Kerala</h3></li>
+          <li><span ><i class="addressicon"></i></span>Phase 1, Main Gate, Diamond Arcade, Near Technopark, Trivandrum</li>
+          <li><span ><i class="teleicon"> </i></span><a href="tel:9856321547">9563254785</a></li>
+          <li><span ><i class="mailicon"> </i></span><a href="mailto:hashifs228@gmail.com">technopark@scopeindia.org</a></li>
+          <li><span ><i class="webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+          <li><span ><i class="mapicon"> </i></span><a href="https://www.google.com/maps/place/SCOPE+INDIA+TVM+-+Courses+in+Python,+PHP,+Java,+ASP+.Net,+Software+Testing,+Selenium,+Flutter,+AWS,+Azure,+CCNA,+RHCE,+Cloud/@8.4889486,76.9502029,17z/data=!3m1!4b1!4m6!3m5!1s0x3b05bba5cdaff17b:0xdf93784626e9d676!8m2!3d8.4889486!4d76.9502029!16s%2Fg%2F11bx5qbhyf?entry=ttu" target="_blank">Location Map</a></li>
+        </ul>
+
+      </div>
+                        <div class="col-1" style="width: 2.5%;"></div>
+      <div class="col-5 p-3 mb-4 register_locationbx2"style="border: 1px solid white;">
+        <ul class="register_location_contentbx" type="none">
+          <li><h3>Thampanoor TVM, Kerala</h3></li>
+          <li><span ><i class="addressicon"></i></span> TC 25/1403/3, Athens Plaza, SS Kovil Road, Thampanoor, Trivandrum, Kerala 695001 </li>
+          <li><span ><i class="teleicon"> </i></span><a href="tel:9856321547">9563254785</a></li>
+          <li><span ><i class="mailicon"> </i></span><a href="mailto:hashifs228@gmail.com">info@scopeindia.org</a></li>
+          <li><span ><i class="webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+          <li><span ><i class="webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-5 p-3 mb-4 register_locationbx3"style="border: 1px solid white;">
+        <ul class="register_location_contentbx" type="none">
+          <li><h3>Kochi, Kerala</h3></li>
+          <li><span ><i class="register_location_addressicon"></i></span>SCOPE INDIA, Vasanth Nagar Rd, near JLN Metro Station, Kaloor, Kochi, Kerala 682025</li>
+          <li><span ><i class="register_location_teleicon"></i></span><a href="tel:9856321547">9563254785</a></li>
+          <li><span ><i class="register_location_mailicon"> </i></span><a href="mailto:hashifs228@gmail.com"> kochi@scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+        </ul>
+
+      </div>
+      <div class="col-1" style="width: 2.5%;"></div>
+
+      <div class="col-5 p-3 mb-4 register_locationbx4"style="border: 1px solid white;">
+        <ul class="register_location_contentbx" type="none">
+          <li><h3>Nagercoil, Tamil Nadu</h3></li>
+          <li><span ><i class="addressicon"></i></span>SCOPE INDIA, Near WCC College, Palace Rd, Nagercoil, Tamil Nadu 629001</li>
+          <li><span ><i class="teleicon"> </i></span><a href="tel:9856321547">9563254785</a></li>
+          <li><span ><i class="mailicon"> </i></span><a href="mailto:hashifs228@gmail.com">ngl@scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-5 p-3 mb-4 register_locationbx5"style="border: 1px solid white;" >
+        <ul class="register_location_contentbx" type="none">
+          <li><h3>Nagercoil, Tamil Nadu</h3></li>
+          <li><span ><i class="addressicon"></i></span>SCOPE INDIA, Pharma Street, 5/2 Ward 28, Distillery Road, Putheri Nagercoil (Near WCC Jn)</li>
+          <li><span ><i class="teleicon"> </i></span><a href="tel:9856321547">9563254785</a></li>
+          <li><span ><i class="mailicon"> </i></span><a href="mailto:hashifs228@gmail.com">ngl@scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+          <li><span ><i class="register_location_webicon"> </i></span><a href="https://scopeindia.org/" target="_blank">www.scopeindia.org</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+<div style="width:100%;height: 120px;" class="register_locationbx_end_img"></div>
+<div></div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    
+
+{% endblock content %} 

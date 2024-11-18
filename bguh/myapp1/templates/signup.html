@@ -1,0 +1,105 @@
+{% extends "common.html" %}
+{% load static %}
+
+
+
+
+
+
+{% block content %}
+  <div style="background-color: rgb(17, 25, 79);">
+
+<div style="display: flex;justify-content: center;" class="logintext"><h2>Sign up</h2></div>
+<div class="mt-3 login_container ">
+    
+    <div class="login_form_bg_img"  >
+  <div class="login_form border: 5px solid;" style="padding-bottom: 7px" >
+      <form action="" method="post" > 
+          {% csrf_token %}
+       <div class="row" >
+         
+
+              <div class="col-12 p-0 col2" >
+                
+  
+
+
+
+  
+
+{% if not otpview %}
+  
+
+
+                 <div class="row m-3">
+                    <label for="" style="padding: 0;margin-bottom: 7px;color: rgb(2, 1, 60);">Email</label>
+                    
+
+                      <input name='username' type="address" class="address p-1" id="address" placeholder="Enter your username" style="height: 35px;border-radius: 5px;border: 2px solid black;">
+                      {% if messages %}
+                      {% for mes in messages %}
+                        <div style="color: rgb(255, 0, 17);" class="sec">{{mes}}</div>
+                      {% endfor %}
+                    {% endif %}
+                    </div>
+
+                  {% endif %}
+      {% if otpview %}
+        
+      
+      <div class="row m-3">
+        <label for="" style="padding: 0; margin-bottom: 7px; color: rgb(2, 1, 60);">Otp</label>
+        <input name="otp" type="text" class="otp p-1" id="otp" placeholder="Enter your OTP" style="height: 35px; border-radius: 5px; border: 2px solid black;">
+        
+        {% if messages %}
+        {% for messa  in messages %}
+          
+       
+          <div class="text-danger sec" class> {{ messa }}</div>
+           
+           {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+                  <div class="row m-3" style="align-items: center;flex-direction: column;">
+                        <button style="height: 35px;background-color: rgb(33, 42, 33);width: 30%;color: white;">verify</button>
+                        
+                        <div style="text-align: center;margin-top: 18px;"><a href="{% url 'login' %}" style="color: rgb(20, 99, 125);border: 2px solid;"><h6>Not new  click here </h6></a></div>
+                        
+                </div>
+
+        
+
+
+       
+          
+          
+  
+                  
+          </div>
+      </div>  
+      
+      </form> 
+      </div>
+    </div>
+  
+  
+  
+  
+  
+    </div> 
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+    {% endblock content %}

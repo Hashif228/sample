@@ -1,0 +1,161 @@
+{% extends "common.html" %}
+{% load static %}
+{% block content %}
+
+<div style="background-image: url('/static/img/snowpark-home-slider-background.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    
+<div class="home_background">
+    <div class="home_scopelogo"></div>
+</div>
+
+
+
+<div class="home_scroll">
+   
+   
+  <a href="{% url 'java' %}"><img src="/static/img/scope-india-java-full-stack-course (1).jpg" alt=""></a>
+    <a href="{% url 'azure' %}"><img src="/static/img/scope-india-azure-certification-course.jpg" alt=""></a>
+      <a href="{% url 'asp' %}"><img src="/static/img/scope-india-dotnet-core-full-stack-course.jpg" alt=""></a>
+        <a href="{% url 'devops' %}"><img src="/static/img/Devops-training-scopeindia.jpg" alt=""></a>
+        <a href="{% url 'aws' %}"><img src="/static/img/scope-india-aws-certification-course-(1).jpg" alt=""></a>
+        <a href="{% url 'digitalmarketing' %}"><img src="/static/img/scope-india-digital-marketing-course.jpg" alt=""></a>
+        <a href="{% url 'flutter' %}"><img src="/static/img/scope-india-flutter-fullstack-course.jpg" alt=""></a>
+        <a href="{% url 'mern' %}"><img src="/static/img/scope-india-mean-mern-stack-course.jpg" alt=""></a>
+        <a href="{% url 'networking' %}"><img src="/static/img/scope-india-network-server-administration-course (1).jpg" alt=""></a>
+        <a href="{% url 'php' %}"><img src="/static/img/scope-india-php-full-stack-course (1).jpg" alt=""></a>
+        <a href="{% url 'python' %}"><img src="/static/img/scope-india-python-full-stack-course (1).jpg" alt=""></a>
+        <a href="{% url 'softwaretesting' %}"><img src="/static/img/scope-india-software-testing-manual-automation-course.jpg" alt=""></a>
+
+</div>
+
+
+
+  <div style="width:100%;height: 120px;" class="contact_locationbx_end_img"></div>
+
+
+
+<div class="bg-white">
+
+
+
+<div class="index_container mb-0">
+    <div class="index_form_bg_img "  >
+  <div class="index_form ">
+      <form action="" method="post"> 
+          {% csrf_token %}
+         
+          
+       <div class="row">
+         <div class="col-6 p-0 index_form_col1" style="border: 8px solid white;" >
+            <div class="col-12 m-2 mb-1">
+
+                <iframe style="width: 97%;height:450px;" src="https://www.youtube.com/embed/MjQG-a7d41Q?si=zWfDvzsc1x5SXWQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+              
+  
+            </div>
+          
+      
+
+              <div class="col-6 p-3 index_form_col2 " style="border: 0;">
+                {% if messages %}
+                {% for mes in messages %}
+                <div style="background-color: rgb(78, 90, 78);width: 50%;text-align: center;color: white;">{{mes}}</div>
+                {% endfor %}
+                 
+                {% endif %}
+                <div style="text-align: center;">
+
+                <div class="row m-4"><h3 style="text-align: start;padding: 0;">We are open 365 days
+                </h3></div>
+                <div class="m-4"><p style="text-align: start;">SCOPE INDIA is open 7/24 hrs to talk to you and listen to your queries.</p></div>
+                <div class="row ms-2" style="text-align: start;"><h3>GET A FREE CALL BACK
+                </h3></div>
+
+
+<div class="row m-4 mt-0">
+    <input name="name" type="text" class=" p-1" id="name" placeholder="Enter your name" required>
+</div>
+
+
+<div class="row m-4">
+    <input name="phone" type="phone" class=" p-1" id="phone" placeholder="Enter your phone number" required>
+</div>
+<div class="row m-4">
+      <button style="height: 35px;background-color: rgb(97, 243, 97); border-radius: 3px;">Call Me</button>                        
+</div><br>
+
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>  
+
+</form> 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="knowcontainer know" style="text-align: center;padding-top:5%;color: black;">
+    <div class="index_rating_img" ></div>
+         <div style="margin-top: 5px;">Google 4.9 * Rated Institute</div>
+    <div class="" ><h1>SCOPE INDIA, your career partner!</h1>
+        
+        <h2 style="font-size: 34px;">One of the best Training Destination for Software, Networking and Cloud Computing courses in India with 17 years of Industrial experience</h2>
+        <p style="text-align: justify;">Software, Networking, and Cloud Professional Education Centre in Kerala and Tamil Nadu from Suffix E Solutions with WORKING PROFESSIONALS oriented on-the-job TRAINING model. SCOPE INDIA provides courses for Software Programming in Python (Data Science | Artificial Intelligence | Machine Learning | Deep Learning, Data Analytics), Java, PHP, .Net, MERN, Software Testing Manual and Automation, Cloud Computing (AWS | Azure), Server Administration (MicroSoft MCSE | Linux RHCE), Networking (CCNA), DevOps, Mobile App Development in Flutter, and Digital Marketing. Training with a 100% Trusted Job-Based Internship Model. SCOPE INDIA has a Strong Placement Cell that provides jobs to thousands of students every year. We assure you, you won't regret it after training from SCOPE INDIA!
+    
+          <p style="text-align: start;">This is how SCOPE INDIA can support both newbies and experienced in the industry to upgrade their skills.</p></p>
+         <div class="row">
+          <div class="col-12"><a href="{% url 'login' %}"><button class="mb-4" style="width: 100%;height: 50px;background-color: rgb(159, 236, 211);border-radius: 5px">Recent Placements</button></a></div>
+          <div class="col-12"><a href="{% url 'course' %}"><button class="mb-4" style="width: 100%;height: 50px;background-color: rgb(156, 156, 232);border-radius: 5px">Courses</button></a></div>
+          <div class="col-12"><a href="{% url 'register' %}"><button class="mb-4" style="width: 100%;height: 50px;background-color: rgb(240, 182, 182);border-radius: 5px">Register Now</button></a></div>
+          <div class="col-12"><a href=" https://wa.me/0000000000"><button class="mb-4" style="width: 100%;height: 50px;background-color: rgb(240, 235, 182);border-radius: 5px">Chat On Whatsapp</button></a></div>
+
+         </div>
+    
+      </div></div>
+
+
+
+
+
+<div class=" pt-4" style="display: flex;justify-content: center;padding-bottom: 5%;background-color: whitesmoke;">
+  <div style="width: 65%;display: flex;gap: 25px;text-align: justify;" class="home_det">
+    <div class=""><div style="display: flex;justify-content: center;"><a style="color: black;" href=""><img style="width: 64px;height: 64px;" src="/static/img/snowpark-home-icon1.png" class="wwww" alt=""></div><h1 style="text-align: center;">Training</h1><p>You are trained under Suffix E Solutions experienced  working professionals, on-the-job training model.</p></div></a>
+    <div class=""><div style="display: flex;justify-content: center;"><a style="color: black;" href=""><img style="width: 64px;height: 64px;" src="/static/img/snowpark-home-icon2.png" alt=""></div><h1 style="text-align: center;">Internship</h1><p>After course completion, you will be proceeded to live projects with a 6 months experience certificate.</p></div></a>
+    <div class=""><div style="display: flex;justify-content: center;"><a style="color: black;" href=""><img style="width: 64px;height: 64px;" src="/static/img/snowpark-home-icon3.png" alt=""></div><h1 style="text-align: center;">Grooming</h1><p>CV Preparation, Interview Preparation, and includes Personality Development.</p></div></a>
+    
+    <div class=""><div style="display: flex;justify-content: center;"><a style="color: black;" href=""><img style="width: 64px;height: 64px;" src="/static/img/snowpark-home-icon4.png" alt=""></div><h1 style="text-align: center;">Placement</h1><p>Gives 100% FREE placement support to all our fellow techies through SCOPE INDIA's Placement Cell.</p></div></a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}

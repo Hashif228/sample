@@ -1,0 +1,157 @@
+{% extends "comm.html" %}
+{% load static %}
+{% block content %}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="video">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DgdhR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div  class="col-md-6 bg d-flex align-items-center">
+                    <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5 ></h5>
+                        <h1 style="color:#0F172B;" class=" mb-4">Register Now</h1>
+                        <form>
+                            <div class="row g-3">
+                                
+                                <div  class="col-md-6">
+                                    <label for="firstname">First Name</label>
+                                        <input  type="text" class="form-control" id="firstname" name="firstname" placeholder=" ">
+                                </div>   
+
+
+                                <div class="col-md-6">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder=" ">
+                                </div>
+                                
+                                
+                                <div class="col-md-6">
+                                    <label for="gender">Gender</label><br>
+                                <input type="radio" name="gender" id="gender">
+                                <label for="gender">male</label>
+                                <input type="radio" name="gender" id="gender">
+                                <label for="gender">female</label>
+                                    
+                                </div>  
+                                
+                                
+                                <div class="col-md-6">
+                                    <label for="dob">Date of Birth</label><br>
+                                    <input type="text" class="form-control data-bs-target" id="dob" name="dob" placeholder=" ">
+                                </div> 
+                                
+                                
+                                <div class="col-md-6">
+                                        <label for="mail">Email</label>
+                                        <input type="email" class="form-control" id="mail" name="mail" placeholder=" ">
+                                    </div>
+                                                                
+                                <div class="col-md-6">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder=" ">
+                                </div>
+                                                                 
+                                <div class="col-md-6 " >
+                                        <label for="">Country</label><br>
+                                        <select style="background-color: white;" name="country" id="country" class="form-control">
+                                        <option value="country">INDIA</option>
+                                        <option value="country">China</option>
+                                        <option value="country">JAPAN</option>
+                                      </select><br><br>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="state">State</label><br>
+                                    <select style="background-color: white;" name="" id="" class="form-control">
+                                        <option value="state">Kerala</option>
+                                        <option value="state">Tamilnadu</option>
+                                        <option value="state">Karnataka</option>
+                                        <option value="state">Bihar</option>
+                                      </select><br><br>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <label for="phone">City</label>
+                                    <input style="background-color: white;" type="text" class="form-control" id="city" name="city" placeholder=" ">
+                                </div>
+                                
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-floating">
+                                        <label>Hobbies</label><br>
+                                        <label class="form-check-label" for="hobbie">Travelling</label>
+                                        <input type="checkbox" class="" id="hobbie" >&nbsp; &nbsp;
+
+                                        <label class="form-check-label" for="hobbie">Readnig</label>
+                                        <input type="checkbox" class="" id="hobbie" >&nbsp;&nbsp;
+
+                                        <label class="form-check-label" for="hobbie">Nothing</label>
+                                        <input type="checkbox" class="" id="hobbie" >&nbsp;&nbsp;
+                                    </div>
+                                    </div>
+                                 -->
+                                <div style="background-color: white;" class="col-md-6">
+                                    <label for="">Hobbies:</label><br>
+
+                                    <input type="checkbox" class="checkbox" id="travelling" value="travelling" >
+                                    <label class="form-check-label" for="hobbie">Travelling</label>
+
+                                    <input type="checkbox" class="checkbox" id="reading" value="reading" >
+                                    <label  class="form-check-label" for="hobbie">Reading</label>
+
+                                    <input type="checkbox" class="checkbox" id="nothing" value="cinema" >
+                                    <label class="form-check-label" for="hobbie">Cinema</label>
+                                </div>
+                                <input type="button" id="q">
+                                
+                                <div class="col-md-6">
+                                        <label for="select1">File</label>
+                                        <input style="background-color: white;" type="file" class="form-control">
+                                </div>
+                                
+                               
+                                <div class="col-12">
+                                    <button style="background-color: #0F172B;" class="btn btn-primary w-100 py-3" type="submit">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+
+{% endblock %}

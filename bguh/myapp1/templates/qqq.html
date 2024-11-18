@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Toggle with Transition</title>
+    <style>/* styles.css */
+
+        #nav4 {
+            opacity: 0;
+            transform: translateY(-20px); /* Start slightly off-screen */
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            visibility: hidden; /* Ensure it's not interactable */
+        }
+        
+        #nav4.show {
+            opacity: 1;
+            transform: translateY(0); /* Move into view */
+            visibility: visible; /* Make it interactable */
+        }
+        
+        #menu, #close {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        #close {
+            background-color: #f44336; /* Red color for close button */
+        }
+        </style>
+</head>
+<body>
+    <button id="menu">Menu</button>
+    <div id="nav4" class="hidden">
+        <button id="close">Close</button>
+        <p>This is the navigation content.</p>
+    </div>
+
+    <script>// script.js
+
+        document.getElementById('menu').addEventListener('click', function() {
+            const nav4 = document.getElementById('nav4');
+            const menuButton = document.getElementById('menu');
+            const closeButton = document.getElementById('close');
+        
+            // Show nav4 and hide menu button
+            nav4.classList.add('show');
+            menuButton.style.display = 'none';
+            closeButton.style.display = 'block';
+        });
+        
+        document.getElementById('close').addEventListener('click', function() {
+            const nav4 = document.getElementById('nav4');
+            const menuButton = document.getElementById('menu');
+            const closeButton = document.getElementById('close');
+        
+            // Hide nav4 and show menu button
+            nav4.classList.remove('show');
+            setTimeout(() => {
+                menuButton.style.display = 'block';
+                closeButton.style.display = 'none';
+            }, 500); // Delay to match transition duration
+        });
+        </script>
+</body>
+</html>

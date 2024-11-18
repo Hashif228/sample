@@ -1,0 +1,443 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+a{
+  color: white;
+}
+
+.hh a {
+    color: #313752;
+}
+/* .pro a{
+    color: black;
+} */
+
+
+.se div{
+    margin-bottom: 10px;
+}
+
+ .hh a:hover{
+color: #051A69;
+background-color: rgba(241,241,247,255);
+ }
+.hh{
+  padding-top: 5px;
+
+padding-bottom: 5px;}
+
+.hhh{
+  color: rgb(10, 72, 103);
+}
+.bt{
+    color: #313752;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: start;
+    padding-top: 5px;
+
+padding-bottom: 5px;
+    
+}
+
+
+.bt:hover{
+    color: #051A69;
+background-color: rgba(241,241,247,255);
+}
+
+
+
+
+
+
+.jk{
+    width: 75%;
+}
+.km{
+    gap: 50px;
+}
+.hn{
+    margin-top:115px;
+}
+@media(max-width:1115px){
+    .ji{
+        width: 25%;
+    }
+    .jk{
+        width: 90%;
+    }
+}
+@media(max-width:925px){
+    .jk{
+        width: 95%
+    }
+}
+@media(max-width:862px){
+    .lm{
+        width:50%;
+        
+    }
+
+}
+@media(max-width:738px){
+    .ji{
+        width: 28%;
+    }
+    .km{
+        gap: 10px;
+    }
+}
+@media(max-width:610px){
+    .ji{
+        width: 32%;
+    }
+    .km{
+        gap: 5px;
+    }
+}
+
+@media(max-width:600px){
+    .km{
+        flex-direction: column;
+        
+    }
+    .hn{
+        
+        margin: 10px auto;
+    }
+}
+
+@media(max-width:585px){
+    .hn{
+        width: 98%;
+    }
+}
+
+@media(max-width:570px){
+    .ji{
+        width: 40%;
+    }
+}
+
+
+
+@media(max-width:460px){
+    .ji{
+        width: 45%;
+    }
+}
+@media(max-width:400px){
+    .ji{
+        width: 50%;
+    }
+    .hn{
+        width: 99%;
+    }
+    .lm{
+        width: 100%;
+        text-align: start;
+    }
+}
+
+@media(max-width:355px){
+    .ji{
+        width: 55%;
+    }
+}
+
+
+
+
+
+</style>
+</head>
+<body >
+
+
+
+    
+    <div class="backgr">
+
+    <div class="nav_body" style="position: fixed;width: 100%;top: 0;z-index: 555;">
+        <!-- header 1 -->
+            <div class="nav1">
+                <div class="container m-0 nav1l" >
+                    <div class="row">
+                        <div class="col-4"><a href="{% url 'index' %}">Home</a></div>
+                        <div class="col-4"><a href="{% url 'course' %}">Courses</a></div>
+                        <div class="col-4"><a href="{% url 'placement' %}">Placement Cell</a></div>
+                    </div>
+                </div>
+                <div class="main_logo">
+                    <img src="{% static 'img/scope-india-logo-bird.png' %}" alt="ro"> 
+                </div>
+        
+        
+        
+                <div class="container m-0 nav1l">
+                    <div class="row">
+                        <div class="col-4 "><a href="{% url 'know' %}">Know us</a></div>
+                        <div class="col-4"><a href="{% url 'contact' %}">Contact us</a></div>
+                        {% if not request.session.email %}
+                        <div class="col-4 bx p-0 m-0"><a href="{% url 'register' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Register Now </div></a></div>
+{% else %}
+<div class="col-4 bx p-0 m-0"><a href="{% url 'dashboard' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Profile </div></a></div>
+
+{% endif %}                    </div>
+                </div>
+            </div>
+        
+        
+        <!-- header 2 -->
+            <div class="nav2">
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-4"><a href="{% url 'index' %}">Home</a></div>
+                        <div class="col-4"><a href="{% url 'course' %}">Courses</a></div>
+                        <div class="col-4"><a href="">Placement Cell</a></div>
+                    </div> 
+                    <div class="row pt-3 pb-2">
+                        <div class="col-4 "><a href="{% url 'know' %}">Know us</a></div>
+                        <div class="col-4"><a href="{% url 'contact' %}">Contact us</a></div>
+                        {% if not request.session.email %}
+                        <div class="col-4 bx p-0 m-0"><a href="{% url 'register' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Register Now </div></a></div>
+                        {% else %}
+                        <div class="col-4 bx p-0 m-0"><a href="{% url 'dashboard' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Profile </div></a></div>
+{% endif %}                    </div>
+                </div>
+            </div>
+        <!-- header 3 -->
+            <div class="nav3">
+                <div class="container mt-1 " >
+                    <div class="row">
+                        <div class="col-6"><a href="{% url 'index' %}">Home</a></div>
+                        <div class="col-6"><a href="{% url 'course' %}">Courses</a></a></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-6"><a href="{% url 'contact' %}">Contact us</a></div>
+                        <div class="col-6 "><a href="{% url 'know' %}">Know us</a></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-6 "><a href="">Placement Cell</a></div>
+                        {% if not request.session.email %}
+                        <div class="col-4 bx p-0 m-0"><a href="{% url 'register' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Register Now </div></a></div>
+                        {% else %}
+                        <div class="col-4 bx p-0 m-0"><a href="{% url 'dashboard' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Profile </div></a></div>
+{% endif %}                    </div>
+                </div>
+            </div>
+        <!-- header 4 -->
+        <div class="close me-2" id="close"><img id="closeicon" src="{% static 'img/icons8-close-52.png' %}" alt="">
+
+        </div>
+
+            <div class="nav4" id="nav4">
+                <div class="container mt-1  " >
+                    <div class="row pt-2">
+                        <div class="col-12"><a href="{% url 'index' %}">Home</a></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12"><a href="{% url 'course' %}">Courses</a></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12"><a href="">Placement Cell</a></div>
+                    </div>
+                        <div class="row pt-3">
+                    <div class="col-12 "><a href="{% url 'know' %}">Know us</a></div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12"><a href="{% url 'contact' %}">Contact us</a></div>
+                    </div>
+                        <div class="row pt-3 pb-2 qa ">
+                            {% if not request.session.email %}
+                            <div class="col-4 bx p-0 m-0"><a href="{% url 'register' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Register Now </div></a></div>
+                            {% else %}
+                            <div class="col-4 bx p-0 m-0"><a href="{% url 'dashboard' %}"><div style="padding-top: 3px;padding-bottom: 3px;">Profile </div></a></div>
+  {% endif %}                    </div>
+                </div>
+            </div>
+
+            <div class="menu me-2" id="menu"><img id="menuicon" src="{% static 'img/icons8-menu-bar-50.png' %}" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div style="background-color: rgba(241,241,247,255);padding-top: 25px;">
+<!-- <h4>{{register.dob}} {{register}}</h4> -->
+
+
+<!-- <div style="background-image: url('/static/img/si-call-back-bg.jpg');height: 800px;width: 1200px;"></div> -->
+ <!-- <div style="background-color: rgb(225, 221, 221);"></div> -->
+
+
+
+
+
+
+
+
+
+<div class="row hh km" style="justify-content: start;">
+  <div class="col-2 ji" style="padding-top: 25px;margin-top: 20px;border-radius: 5px;background-color: rgba(255,255,255,255);"  >
+    <div style="display: flex;flex-direction: column;color: black;gap: 12px;padding-left: 25px;" class="">
+    <!-- <div><a href=""><i class="bi bi-person "></i>Profile</a></div> -->
+    <a href="{% url 'dashboard' %}"><div class="hh"><i class="bi bi-person"></i>Profile</div></a>
+    <a href="{% url 'dashboardcourse' %}"><div class="hh"><i class="bi bi-book"></i>Select Courses</div></a>
+
+    <a href="{% url 'changepassword' %}"><div class="hh"><i class="bi bi-lock"></i>Change Password</div></a>
+    <form action="{% url 'logout' %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit" class="bt" >
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </button></form>
+    </div>
+</div> 
+    <div class="col-8 hn" style="padding-top: 25px;margin-bottom: 85px;border-radius: 5px;background-color: rgba(255,255,255,255);display: flex;flex-direction: column;align-items: center;"> 
+ <div style="border: 2px solid;padding-top: 15px;padding-bottom: 15px;margin-bottom: 45px;margin-top: 25px;border-radius: 5px;border: 3px solid #051A69;">
+ <div class="row" style="justify-content: center;"  >
+    <img src="{{register.avatar.url}}" alt="" style="width: 40%;margin-bottom: 25px;"></div>
+
+ <!-- <input type="file" id="imageInput"> -->
+ <div class="row hhh" style="gap:10px;width:100%;justify-content: center;margin-left: 0;">
+  <div style="display: flex;justify-content: center;" class="se">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div style="display: flex;gap:25px;">  
+            <div style="border: 2px solid grey;width: 200px;" class="form-floating mb-3" ><input class="form-control" type="text"  name="firstname" value={{register.firstname}} style="color: rgb(10, 72, 103);border: none;outline: none;margin-bottom: 0;" placeholder="First Name"><label for="firstName">First Name</label></div>
+        <div style="border: 2px solid grey;width: 200px;;" class="form-floating mb-3"   ><input class="form-control" type="text"  name="lastname" value={{register.lastname}} style="color: rgb(10, 72, 103);border: none; outline: none;" placeholder="Lastname"><label for="lastName">Last Name</label></div>
+
+</div>
+ <!-- <div>{{register.gender}}</div> -->
+ <!-- <div>{{register.dob}}</div> -->
+ <!-- <div>{{register.hobbies}}</div> -->
+ <div  style="border: 2px solid grey;width: 250px;"  class="form-floating mb-3" ><input class="form-control" type="text"  name="email" value={{register.email}} style="color: rgb(10, 72, 103);border: none;outline: none;" placeholder="Email"><label for="email">Email</label></div>
+ <div style="border: 2px solid grey;width: 250px;"  class="form-floating mb-3" ><input class="form-control" type="text"  name="phone" value={{register.phone}} style="color: rgb(10, 72, 103);border: none;" placeholder="Phone"><label for="">Phone</label></div>
+ <div style="border: 2px solid grey;width: 250px;" >Upload Photo:<br>
+    <input type="file"  name="profilephoto" style="color: rgb(10, 72, 103);background: none;margin-left: 30px;"  ></div>
+
+ <!-- <div>{{register.state}}</div>
+ <div>{{register.city}}</div> -->
+
+ <div>{{login.coursesselected}}</div>
+
+ {% if messages %}
+ {% for mes in messages %}
+   <div style="color: aqua;" class="sec">{{mes}}</div>
+ {% endfor %}
+{% endif %}
+ <button style="background-color: #051A69;color: white;align-items: center;text-align: center;justify-content: center;margin-left: 50%;">Save</button>
+</form>
+</div>
+</div>
+</div>
+
+</div>   
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer" style="background-color:#021b5b;padding-bottom: 75px; ">
+  <div class="footer_top_color_img" style="width: 100%; height: 100%;">
+
+  <div class="footer_scopetext_img" style="width: 100%; height:150px;"></div>
+  <div style="text-align: center;">Technopark TVM | Thampanoor TVM | Kochi, Kerala | Nagercoil, Tamil Nadu</div>
+  <div class="footer_certification_img" style="width: 100%;height: 100px;text-align: center;"></div>
+  <div style="text-align: center;" class="mb-3">An ISO 9001:2015 Certified Company</div></div>
+  <div style="text-align: center;" class="mb-3">All Rights Reserved Suffix E Solutions © 2007-2024</div>
+  <div>
+      <div class="row" style="justify-content: center;">
+          <div class="row footer_contact" style="width: 75%;text-align: center;">
+          <div class="col-1"></div>
+          <div class="col-2">5465464456</div>
+          <div class="col-2">5465464456</div>
+          <div class="col-2">5465464456</div>
+          <div class="col-2">5465464456</div>
+          <div class="col-2">5465464456</div>
+          <div class="col-1"></div>
+      </div>
+  </div>
+  </div>
+  
+
+
+
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
